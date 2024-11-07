@@ -1,1 +1,16 @@
+class Solution:
+    def intersection(self, nums1, nums2):
+        set1 = set(nums1)
+        set2 = set(nums2)
+        result = []
 
+        for num in set2:
+            if num in set1:
+                result.append(num)
+                
+        return result
+
+
+----------------> Creating a set is best solution, because in set there cannot be duplicates. All elements are unique
+----------------> We create two sets for two arrays, then we will check if there is an element of set1 in set2. 
+----------------> If it is true will add this number to our result array 
