@@ -1,0 +1,13 @@
+C:\Users\Админ\Downloads>python -m unittest -v test_security_analyst > result.txt
+test_all_zero_threat_scores (test_security_analyst.TestSecurityAnalyst.test_all_zero_threat_scores) ... ok
+test_company_score_with_equal_importance (test_security_analyst.TestSecurityAnalyst.test_company_score_with_equal_importance) ... ok
+test_company_score_with_high_importance_department (test_security_analyst.TestSecurityAnalyst.test_company_score_with_high_importance_department) ... ok
+test_department_score_calculation (test_security_analyst.TestSecurityAnalyst.test_department_score_calculation) ... ok
+test_empty_department (test_security_analyst.TestSecurityAnalyst.test_empty_department) ... ok
+test_outliers_in_department_scores (test_security_analyst.TestSecurityAnalyst.test_outliers_in_department_scores) ... ok
+test_varying_department_sizes (test_security_analyst.TestSecurityAnalyst.test_varying_department_sizes) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+OK
