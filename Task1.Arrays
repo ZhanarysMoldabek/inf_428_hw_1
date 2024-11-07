@@ -1,16 +1,1 @@
-class Solution:
-    def findLengthOfLCIS(self, nums):
-        if not nums:           ----------> it will display 0 if there is any kind of not number element(character, symbol, etc.)
-            return 0
-        
-        maxLen = count = 1       ------------> initial maximum length and counting for new length equals 1
-        for i in range(1, len(nums)):       ---------> the new count starts here via for loop with the last cheked element of an array
-            if nums[i] > nums[i - 1]:         ---------> if the next element is more than previous count will be increased by 1
-                count += 1
-                maxLen = max(maxLen, count)       ----------> there will be defined which is bigger of 2 elements by max function
-            else:
-                count = 1             ---------> if the next element is less than previous there is no need of comparing two elements
-                                        ---------> if an array is fully decreasing order or all elements are equal it will display 1
-       
-        return maxLen
 
